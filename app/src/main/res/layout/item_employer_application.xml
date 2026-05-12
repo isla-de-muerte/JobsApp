@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="14dp"
+    android:layout_marginVertical="7dp"
+    app:cardCornerRadius="24dp"
+    app:cardElevation="2dp"
+    app:strokeColor="@color/app_border"
+    app:strokeWidth="1dp"
+    app:cardBackgroundColor="@color/app_surface">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Новый"
+            android:textColor="@color/app_primary"
+            android:textStyle="bold"
+            android:background="@color/app_primary_light"
+            android:paddingHorizontal="14dp"
+            android:paddingVertical="8dp" />
+
+        <TextView
+            android:id="@+id/fullNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Иван Иванов"
+            android:textColor="@color/app_text"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:layout_marginTop="14dp" />
+        <TextView
+            android:id="@+id/unreadBadgeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@color/app_error"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:visibility="gone"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/contactsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="telegram: @ivan"
+            android:textColor="@color/app_primary"
+            android:textSize="15sp"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:id="@+id/skillsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Навыки: Kotlin, Ktor, PostgreSQL"
+            android:textColor="@color/app_text"
+            android:textSize="15sp"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/experienceTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Опыт"
+            android:textColor="@color/app_text_secondary"
+            android:textSize="15sp"
+            android:lineSpacingExtra="3dp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/educationTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Образование"
+            android:textColor="@color/app_text_secondary"
+            android:textSize="15sp"
+            android:lineSpacingExtra="3dp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/portfolioTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Портфолио"
+            android:textColor="@color/app_primary"
+            android:textSize="15sp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/coverLetterTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Письмо"
+            android:textColor="@color/app_text_secondary"
+            android:textSize="15sp"
+            android:lineSpacingExtra="3dp"
+            android:layout_marginTop="14dp" />
+        <TextView
+            android:id="@+id/employerFeedbackTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Фидбэк"
+            android:textColor="@color/app_primary"
+            android:textSize="15sp"
+            android:lineSpacingExtra="3dp"
+            android:visibility="gone"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:id="@+id/actionsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/viewedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:text="Просмотрен"
+                    android:textAllCaps="false"
+                    android:textColor="@color/app_primary"
+                    app:cornerRadius="14dp"
+                    app:strokeColor="@color/app_primary"
+                    app:strokeWidth="1dp"
+                    app:backgroundTint="@color/app_surface" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/interviewButton"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:text="Интервью"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    app:cornerRadius="14dp"
+                    app:backgroundTint="@color/app_primary" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/rejectButton"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:text="Отказ"
+                    android:textAllCaps="false"
+                    android:textColor="@color/app_error"
+                    app:cornerRadius="14dp"
+                    app:strokeColor="@color/app_error"
+                    app:strokeWidth="1dp"
+                    app:backgroundTint="@color/app_surface" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/acceptButton"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:text="Принять"
+                    android:textAllCaps="false"
+                    android:textColor="@color/app_success"
+                    app:cornerRadius="14dp"
+                    app:strokeColor="@color/app_success"
+                    app:strokeWidth="1dp"
+                    app:backgroundTint="@color/app_surface" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
