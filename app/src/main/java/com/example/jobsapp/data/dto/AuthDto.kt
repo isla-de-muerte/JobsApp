@@ -37,7 +37,6 @@ data class AuthResponse(
     val refreshToken: String,
     val user: UserResponse
 )
-
 @Serializable
 data class UserResponse(
     val id: String,

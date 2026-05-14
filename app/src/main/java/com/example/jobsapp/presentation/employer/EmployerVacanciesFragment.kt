@@ -97,13 +97,13 @@ class EmployerVacanciesFragment : Fragment() {
             )
         }
 
-        binding.logoutButton.setOnClickListener {
-            AppModule.provideTokenStorage(requireContext()).clearTokens()
-
-            findNavController().navigate(
-                R.id.loginFragment
-            )
-        }
+//        binding.logoutButton.setOnClickListener {
+//            AppModule.provideTokenStorage(requireContext()).clearTokens()
+//
+//            findNavController().navigate(
+//                R.id.loginFragment
+//            )
+//        }
     }
 
     private fun openEmployerApplications(
